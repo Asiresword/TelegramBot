@@ -7,6 +7,10 @@ namespace TelegramBot.API
     public class APIAuth
     {
         protected string Key { get; set; }
+        public virtual string GetKey()
+        {
+            return this.Key;
+        }
     }
 
     // I'm creating a new class which is inherited from APIAuth to hide my API Keys.
