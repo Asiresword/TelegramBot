@@ -1,0 +1,4 @@
+D:\Visual Studio\Visual Studio Repository\TelegramBot\TelegramBot\bin\Debug\netcoreapp3.1\TelegramBot.exe
+D:\Visual Studio\Visual Studio Repository\TelegramBot\TelegramBot\obj\Debug\netcoreapp3.1\TelegramBot.csprojAssemblyReference.cache
+D:\Visual Studio\Visual Studio Repository\TelegramBot\TelegramBot\obj\Debug\netcoreapp3.1\TelegramBot.AssemblyInfoInputs.cache
+D:\Visual Studio\Visual Studio Repository\TelegramBot\TelegramBot\obj\Debug\netcoreapp3.1\TelegramBot.AssemblyInfo.cs
