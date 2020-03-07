@@ -1,2 +1,7 @@
 **/.vs
 /TelegramBot/API/APIAuthLocal.cs
+*.suo
+*.user
+_ReSharper.*
+/TelegramBot/bin
+/TelegramBot/obj
