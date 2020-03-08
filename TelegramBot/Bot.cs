@@ -12,6 +12,7 @@ namespace TelegramBot
         {
             TelegramBot = new TelegramBotClient(new APIAuthLocal().GetKey());
             TelegramBot.OnMessage += BotEventsHandler.BotMessageReceived;
+            TelegramBot.OnCallbackQuery += BotEventsHandler.BotCallbackReceived;
 
             Console.WriteLine($"Bot have been started.\nName: {TelegramBot.GetMeAsync().Result.FirstName}\nTime: {DateTime.Now}\n");
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using Telegram.Bot.Types;
 
-namespace TelegramBot.Handlers
+namespace TelegramBot.Handlers.MessageHandlers
 {
     public abstract class MessageHandler
     {

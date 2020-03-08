@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<patterns>
+  <pattern name="Factory Method">
+    <description>A design pattern, that defines a common interface for creating objects in a superclass, allowing subclasses to change the type of objects, that being created.</description>
+    <difficulty>1 / 3</difficulty>
+    <popularity>3 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When it is not known, what types of objects you need to create.</usabilityitem>
+        <usabilityitem>2. When the system should be expandable and independent of the process of creating new objects.</usabilityitem>
+        <usabilityitem>3. When you want to allow users to expand parts of your framework or library.</usabilityitem>
+        <usabilityitem>4. When the creation of new objects must be delegated from the base class to the inherited classes.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Abstract Factory">
+    <description>A design pattern, that allows you to create groups of related objects without being tied to specific classes of created objects.</description>
+    <difficulty>2 / 3</difficulty>
+    <popularity>3 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When a system needs to work with different types of related products, independent of specific product classes.</usabilityitem>
+        <usabilityitem>2. When created objects should be used together and are interconnected.</usabilityitem>
+        <usabilityitem>3. When a system already uses a Factory Method, but further changes involve the introduction of new types of products.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Singleton">
+    <description>A design pattern, that ensures that the class has only one instance and provides a global access point to it.</description>
+    <difficulty>1 / 3</difficulty>
+    <popularity>2 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When you want a class to have only one instance.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Prototype">
+    <description>A design pattern, that allows you to copy previously created prototype objects.</description>
+    <difficulty>1 / 3</difficulty>
+    <popularity>2 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When a particular type of object to be created must be dynamically determined at run time.</usabilityitem>
+        <usabilityitem>2. When it is undesirable to create a separate class hierarchy of factories to create product objects from a parallel class hierarchy.</usabilityitem>
+        <usabilityitem>3. When cloning an object is a preferable option than creating and initializing it using the constructor.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Builder">
+    <description>A design pattern, that allows you to create complex objects step by step.</description>
+    <difficulty>2 / 3</difficulty>
+    <popularity>3 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When the process of creating a new object should not depend on what parts this object consists of and how these parts are related.</usabilityitem>
+        <usabilityitem>2. When it is necessary to ensure the receipt of various variations of an object in the process of its creation.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Strategy">
+    <description>A design pattern, that defines a set of algorithms, encapsulates each of them and ensures their interchangeability.</description>
+    <difficulty>1 / 3</difficulty>
+    <popularity>3 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When you need to use different variants of an algorithm inside one object.</usabilityitem>
+        <usabilityitem>2. When there are several related classes that differ in behavior.</usabilityitem>
+        <usabilityitem>3. When it is necessary to change the behavior of objects at the program execution stage.</usabilityitem>
+        <usabilityitem>4. When a class that uses certain functionality does not need to know anything about its implementation.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Observer">
+    <description>A design pattern, that creates a subscription mechanism, that allows objects to monitor and respond to events occurring in other objects.</description>
+    <difficulty>2 / 3</difficulty>
+    <popularity>3 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When a system consists of many classes whose objects must be in consistent states.</usabilityitem>
+        <usabilityitem>2. When there is one object that sends messages, and many subscribers who receive messages. Moreover, the exact number of subscribers is not known in advance and the process of the program may change.</usabilityitem>
+        <usabilityitem>3. When the general scheme of interaction of objects involves two sides: one sends messages and is the main one, the other receives messages and responds to them.</usabilityitem>
+        <usabilityitem>4. When some objects must observe others, but only in certain cases.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Command">
+    <description>A design pattern, that allows you to encapsulate a request to perform a specific action as a separate object.</description>
+    <difficulty>2 / 3</difficulty>
+    <popularity>2 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When it is necessary to ensure the execution of the request queue, as well as their possible cancellation.</usabilityitem>
+        <usabilityitem>2. When it is necessary to support logging of changes as a result of requests.</usabilityitem>
+        <usabilityitem>3. When you want to parameterize objects with an action.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Template Method">
+    <description>A design pattern, that defines a general algorithm for the behavior of subclasses, allowing them to override the individual steps of this algorithm without changing its structure.</description>
+    <difficulty>1 / 3</difficulty>
+    <popularity>2 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When subclasses must extend the basic algorithm without changing its structure.</usabilityitem>
+        <usabilityitem>2. When you have several classes doing the same thing with minor differences.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Iterator">
+    <description>A design pattern, which makes it possible to sequentially go around the elements of composite objects without revealing their internal representation.</description>
+    <difficulty>2 / 3</difficulty>
+    <popularity>3 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When it is necessary to bypass an object without revealing its internal structure.</usabilityitem>
+        <usabilityitem>2. When you need to provide several alternative options for iterating over the same object.</usabilityitem>
+        <usabilityitem>3. When there is a set of composite objects, and you need to provide a single interface for iterating over.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="State">
+    <description>A design pattern, that allows objects to change behavior depending on their state.</description>
+    <difficulty>1 / 3</difficulty>
+    <popularity>2 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When the behavior of an object must depend on its state and can change dynamically at run time.</usabilityitem>
+        <usabilityitem>2. When the class code contains many large, similar to each other, conditional statements, that select behaviors depending on the current values ​​of the class fields.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Chain Of Responsibility">
+    <description>A design pattern, which allows you to send requests sequentially through a chain of handlers.</description>
+    <difficulty>2 / 3</difficulty>
+    <popularity>1 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When there is more than one object that can handle a specific request.</usabilityitem>
+        <usabilityitem>2. When it is necessary to transfer a request for execution to one of several objects, without determining exactly which object.</usabilityitem>
+        <usabilityitem>3. When a set of objects capable of processing a request must be set dynamically.</usabilityitem>
+        <usabilityitem>4. When it is important that handlers are executed one by one in a strict order.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Interpreter">
+    <description>A design pattern, that defines grammar representation for a given language.</description>
+    <difficulty>3 / 3</difficulty>
+    <popularity>1 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When you want to make a binary sequence tree.</usabilityitem>
+        <usabilityitem>2. When you want to make your data processing methods and use them in a binary tree.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Mediator">
+    <description>A design pattern, that allows the interaction of many objects without the need to refer to each other.</description>
+    <difficulty>2 / 3</difficulty>
+    <popularity>2 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When there are many interconnected objects, the relationships between them are complex and confused.</usabilityitem>
+        <usabilityitem>2. When you cannot reuse a class, because it depends on a lot of other classes.</usabilityitem>
+        <usabilityitem>3. When you have to create many subclasses of components in order to use the same components in different contexts.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Memento">
+    <description>A design pattern, which allows you to save and restore the past state of objects without revealing the details of their implementation.</description>
+    <difficulty>3 / 3</difficulty>
+    <popularity>1 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When you need to save the state of an object for possible subsequent restoration.</usabilityitem>
+        <usabilityitem>2. When state preservation should take place without violating the principle of encapsulation.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Visitor">
+    <description>A design pattern, which allows you to add new operations to the program without changing the classes of objects on which these operations can be performed.</description>
+    <difficulty>3 / 3</difficulty>
+    <popularity>1 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When you need to perform some operation on all elements of a complex structure of objects.</usabilityitem>
+        <usabilityitem>2. When new operations are often added to classes, while the general structure of classes is stable and practically unchanged.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Decorator">
+    <description>A design pattern, that allows you to dynamically connect additional functionality to the object.</description>
+    <difficulty>2 / 3</difficulty>
+    <popularity>2 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When you need to dynamically add new functionality to an object.</usabilityitem>
+        <usabilityitem>2. When it is impossible to extend the responsibilities of an object through inheritance.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Adapter">
+    <description>A design pattern, that allows objects with incompatible interfaces to work together.</description>
+    <difficulty>1 / 3</difficulty>
+    <popularity>3 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When you want to use a class, but its interface does not match the rest of the application code.</usabilityitem>
+        <usabilityitem>2. When you need to use an existing class with other classes which interfaces are not compatible.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Facade">
+    <description>A design pattern, that allows you to hide the complexity of the system by providing a simplified interface for interacting with it.</description>
+    <difficulty>1 / 3</difficulty>
+    <popularity>2 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When you need to present a simple or stripped down interface for a complex subsystem.</usabilityitem>
+        <usabilityitem>2. When you need to reduce the number of dependencies between the client and the complex system.</usabilityitem>
+        <usabilityitem>3. When you need to determine the subsystem of components in a complex system.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Composite">
+    <description>A design pattern, that allows you to group multiple objects into a single tree structure.</description>
+    <difficulty>2 / 3</difficulty>
+    <popularity>2 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When objects should be implemented as a hierarchical tree structure.</usabilityitem>
+        <usabilityitem>2. When clients must uniformly manage both entire objects and their component parts.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Proxy">
+    <description>A design pattern, that provides an alternate object that controls access to another object.</description>
+    <difficulty>2 / 3</difficulty>
+    <popularity>1 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When you need to control access to a resource, the creation of which is resource-intensive.</usabilityitem>
+        <usabilityitem>2. When it is necessary to differentiate access to the caller.</usabilityitem>
+        <usabilityitem>3. When it is necessary to communicate over the network.</usabilityitem>
+        <usabilityitem>4. When it is necessary to count references to an object or to ensure thread-safe operation with a real object.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Bridge">
+    <description>A design pattern, which allows you to separate the abstraction from the implementation so that both the abstraction and the implementation can be changed independently of each other.</description>
+    <difficulty>3 / 3</difficulty>
+    <popularity>1 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When it is necessary to avoid binding abstraction to implementation.</usabilityitem>
+        <usabilityitem>2. When along with the implementation, it is necessary to change the abstraction independently of each other.</usabilityitem>
+    </usability>
+  </pattern>
+  <pattern name="Flyweight">
+    <description>A design pattern, that allows you to use shared objects in several contexts at once.</description>
+    <difficulty>3 / 3</difficulty>
+    <popularity>1 / 3</popularity>
+    <usability>
+        <usabilityitem>1. When an application uses a large number of monotonous objects, which is why a large amount of memory is allocated.</usabilityitem>
+        <usabilityitem>2. When a part of the state of an object that is mutable can be taken out.</usabilityitem>
+    </usability>
+  </pattern>
+</patterns>
